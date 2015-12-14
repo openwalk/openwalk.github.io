@@ -35,17 +35,15 @@
 
 <body>
 
-@if(Auth::check())
-	{{-- Header --}}
-	<?php if(!isset($header_classes)){ $header_classes = ''; } ?>
-	{{ View::make('partial.c-header')->with('classes', $header_classes) }}
-@endif
+	<!-- Header -->
 
 	<main class="site__content">
-		@yield('content')
+		<!-- Content -->
 	</main>
+	
+	<!-- Footer -->
 
-		@yield('footer')<!--
+		<!--
 --><script type="text/javascript" src="/js/vendor/jquery-2.1.1.min.js"></script><!--
 --><script>
 // Move to base layout js
