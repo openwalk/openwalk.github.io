@@ -1,15 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ Thinker::getLocaleDisplayed() }}">
+<html lang="en">
 <head>
-	<?php
-	$og_title_default = Config::get('settings.title');	
-	$og_description_default = Config::get('settings.description');
-	$og_image_default = Config::get('settings.img_src');
-	?>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimal-ui"/>
-	<title>{{ $site_title or $og_title_default }}</title>
-	<meta name="csrf-token" content="{{ csrf_token() }}" />
+	<title>OpenWalk — A plug-and-play open-source robot who can walk.</title>
 
 	<!--Icon-->
 	<link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
