@@ -1,14 +1,73 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="{{ Thinker::getLocaleDisplayed() }}">
 <head>
-	<title>
-		OpenWalk
-	</title>
+	<?php
+	$og_title_default = Config::get('settings.title');	
+	$og_description_default = Config::get('settings.description');
+	$og_image_default = Config::get('settings.img_src');
+	?>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimal-ui"/>
+	<title>{{ $site_title or $og_title_default }}</title>
+	<meta name="csrf-token" content="{{ csrf_token() }}" />
+
+	<!--Icon-->
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-@2x.png" />
+	<meta name="apple-mobile-web-app-title" content="AR-MA" />
+
+	<!--Stylesheets-->
+	<link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+	<!--Tags-->
+	<meta name="description" content="A plug-and-play open-source robot who can walk." />
+	<link rel="image_src" href="https://avatars2.githubusercontent.com/u/16177688" />
+
+	<!--Open Object-->
+	<!--
+	<meta property="og:image" content="{{ $og_image or $og_image_default }}" />
+	<meta property="og:title" content="{{ $og_title or $og_title_default }}" />
+	<meta property="og:description" content="{{ $og_description or $og_description_default }}" />
+	<meta property="og:type" content="{{ $og_type or 'profile' }}">
+	-->
+
+	<!--TypeKit-->
+	<script type="text/javascript" src="//use.typekit.net/fxk3fgm.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body>
-	<h1>OpenWalk</h1>
-	<p>We are getting our site ready -- check back soon.</p>
-</body>
 
+@if(Auth::check())
+	{{-- Header --}}
+	<?php if(!isset($header_classes)){ $header_classes = ''; } ?>
+	{{ View::make('partial.c-header')->with('classes', $header_classes) }}
+@endif
+
+	<main class="site__content">
+		@yield('content')
+	</main>
+
+		@yield('footer')<!--
+--><script type="text/javascript" src="/js/vendor/jquery-2.1.1.min.js"></script><!--
+--><script>
+// Move to base layout js
+$(document).ready(function()
+{ 
+	// Activate navigation-link for current page
+	var page = location.pathname.split('/')[1];
+	if (!page) {
+		page = 'home';
+	}
+	$(".navigation-link." + page).addClass('navigation-link--active');
+});
+</script><!--
+-->@if(isset($is_header_static) && $is_header_static)
+<script type="text/javascript" src="/js/header.js"></script>
+@endif<!--
+-->@yield('scripts')<!--
+--></body>
 </html>
