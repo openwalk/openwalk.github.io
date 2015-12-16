@@ -1,4 +1,4 @@
-# OpenWalk.github.io
+# OpenWalk’s Website
 
 OpenWalk website code’s repository. Take a look at the site at [openwalk.github.io](http://openwalk.github.io). To access the code that makes the device walk, check [this repository](http://github.com/nonoesp/OpenWalk).
 
