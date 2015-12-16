@@ -23,4 +23,4 @@ Customize the body by changing the angle restrictions, change the position of th
 
 ## OpenWalk’s Team
 
-OpenWalk was developed with ♥ by [Nono Martínez Alonso](http://nono.ma) ([@nonoesp](http://twitter.com/nonoesp)), [Enol Vallina](http://enolvallina.com) ([@enolvallina](http://twitter.com/enolvallina)), and [Guillermo Saavedra](http://twitter.com/@memetbrown) ([@memetbrown](http://twitter.com/memetbrown)). If you like this project, build an OpenWalk yourself, or have nay thoughts, please, do contact us at **openwalkteam@gmail.com,** we would love to hear about it!
+OpenWalk was developed with ♥ by [Nono Martínez Alonso](http://nono.ma) ([@nonoesp](http://twitter.com/nonoesp)), [Enol Vallina](http://enolvallina.com) ([@enolvallina](http://twitter.com/enolvallina)), and [Guillermo Saavedra](http://twitter.com/@memetbrown) ([@memetbrown](http://twitter.com/memetbrown)). If you like this project, build an OpenWalk yourself, or have any thoughts, please, do contact us at **openwalkteam@gmail.com,** we would love to hear about it!
