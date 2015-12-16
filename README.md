@@ -19,7 +19,7 @@ The source code is — available on Github — contains algorithms to tell OpenW
 
 Customize the body by changing the angle restrictions, change the position of the legs, or even modify their shape. The whole robot was built using informal fabrication methods, using chipboard, double-tack mounting film, and a laser-cutter. Download the fabrication drawings and build it yourself!
 
-![Plug and play](https://github.com/openwalk/openwalk.github.io/blob/master/img/card-fabrication.jpg?raw=true)
+![Plug and play](https://github.com/openwalk/openwalk.github.io/blob/master/img/card-fabrication.png?raw=true)
 
 ## Who We Are
 
